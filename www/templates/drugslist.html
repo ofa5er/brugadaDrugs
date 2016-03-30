@@ -1,6 +1,12 @@
 <ion-view view-title="DrugsList">
   <ion-content>
     <ion-list>
+    <div class="list list-inset">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search">
+  </label>
+</div>
       <ion-item ng-repeat="drug in drugslist" href="#/app/drugslist/{{drug.id}}">
         {{drug.title}}
       </ion-item>
